@@ -79,3 +79,65 @@ console.log(newarray)
 // this is for cherrypick
 
 
+
+const input1 = [1, -4, 12, 0, -3, 29, -150];
+const positiveNo1 = input1.filter(e=>e>0)
+console.log(positiveNo1)
+const sum = positiveNo1.reduce((accumulator, curValue) => accumulator + curValue, 0)
+console.log(sum)
+// The given input is a string of multiple words with a single space between each of them. Abbreviate the name and return the name initials.
+const input = [
+    {
+      name: "John",
+      age: 13,
+    },
+    {
+      name: "Mark",
+      age: 56,
+    },
+    {
+      name: "Rachel",
+      age: 45,
+    },
+    {
+      name: "Nate",
+      age: 67,
+    },
+    {
+      name: "Jennifer",
+      age: 65,
+    },
+  ];
+  const newArray=[]
+  const age=input.map(e=>e.age)
+  const maxAge=Math.max(...age)
+  const minAge=Math.min(...age)
+  const diffAge=maxAge-minAge
+  newArray.push(maxAge,minAge,diffAge)
+  console.log('maxAge',maxAge,'minAge',minAge,'diffAge',diffAge,newArray)
+
+
+const input = "George Raymond Richard Martin";
+const positiveNo = input.split(' ')
+const firstLetter=positiveNo.map(e=>e[0])
+
+console.log(firstLetter.reduce((a,c)=>a+c))
+
+
+const products = [
+    { name: "Product 1", price: 20, category: "Electronics" },
+    { name: "Product 2", price: 30, category: "Clothes" },
+    { name: "Product 3", price: 40, category: "Electronics" },
+    { name: "Product 4", price: 50, category: "Clothes" },
+    { name: "Product 5", price: 60, category: "Clothes" },
+    { name: "Product 6", price: 70, category: "Electronics" },
+    { name: "Product 7", price: 80, category: "Clothes" },
+    { name: "Product 8", price: 90, category: "Electronics" },
+  ];
+  const productsFilterElectronics = products.filter((e)=>e.category==='Electronics')
+  const productsFilterClothes = products.filter((e)=>e.category==='Clothes')
+  const electronicsAverage = productsFilterElectronics.map((e)=>e.price)
+  const averageElectronics = electronicsAverage.reduce((a,c)=>a+c)/electronicsAverage.length
+  console.log('productsFilterElectronics',productsFilterElectronics,'productsFilterClothes',productsFilterClothes,'electronicsAverage',electronicsAverage,'averageElectronics',averageElectronics)
+
+
