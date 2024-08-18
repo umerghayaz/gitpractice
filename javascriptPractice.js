@@ -76,4 +76,6 @@ originalArray.forEach((item) => newarray.push(item*2))
 console.log(newarray)
 // this for reverting commit git reset shacode
 //  this is for stashing 
+// this is for cherrypick
+
 
