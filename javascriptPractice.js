@@ -86,7 +86,7 @@ console.log(positiveNo1)
 const sum = positiveNo1.reduce((accumulator, curValue) => accumulator + curValue, 0)
 console.log(sum)
 // The given input is a string of multiple words with a single space between each of them. Abbreviate the name and return the name initials.
-const input = [
+const input2 = [
     {
       name: "John",
       age: 13,
@@ -109,7 +109,7 @@ const input = [
     },
   ];
   const newArray=[]
-  const age=input.map(e=>e.age)
+  const age=input2.map(e=>e.age)
   const maxAge=Math.max(...age)
   const minAge=Math.min(...age)
   const diffAge=maxAge-minAge
