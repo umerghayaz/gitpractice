@@ -80,3 +80,16 @@ const person = {
 
 //   The Object.keys() method returns an array with the keys of an object.
 // const keys = Object.keys(person);
+let response = {
+    name: "Shaun",
+    contact: {
+        phone: "934-379-1420",
+        email: "shaun2000@abc.com",
+        address: {
+            city: "London",
+            country: "United Kingdom"
+        }
+    }
+};
+response.contact.address.city = "New York";
+console.log(response); // Outputs: "New York"
