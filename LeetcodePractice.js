@@ -93,5 +93,83 @@ if (x < ~~(mi / 10) || x > ~~(mx / 10)) {
 }
 console.log(x);
 
+///////////////////////longest palindrome/////////////////
+let isPalindrome = function(s){
+  let pal = ''
+  for (let i =0; i<s.length; i++){
+      pal =s[i] + pal
+  }
+  if (pal == s){
+      return true
+  }
+  else {return false}
+  }
+  function palindromeLongestSubString(s){
+  let stringlength= s.length
+  let arr = []
+   for (let i=0; i < s.length;i++ ){
+       for (let j=i; j < s.length;j++ ){
+       let b = s.slice(i,j+1)
+       if (isPalindrome(b)){
+           arr.push(b)
+       }
+    }
+  
+   }
+  let longestelement =arr.find(element => 
+          arr.every(otherElement => otherElement.length <= element.length)
+      );
+  console.log(longestelement)
+  }
+  palindromeLongestSubString('babad')
+  console.log()   
+  
+  /////////////////signed////////////////
+  /**
+ * @param {number} x
+ * @return {number}
+ */
+// var reverse = function(x) {
+//   let string = x.toString();  // Convert number to string
+//   console.log(string);           // Logs the string version of the number
+//   let reversed = '';            // Initialize reversed as an empty string
+//   for (let i = 0; i < string.length; i++) {
+//       reversed = string[i] + reversed;  // Concatenate the current character at the beginning of 'reversed'
+//   }
+//       if (reversed.includes('-')){
+//       reversed = reversed.replace("-","")
+//       reversed = "-" + reversed
+//   }
+//   const INT_MIN = -(2 ** 31); // -2147483648
+//   const INT_MAX = 2 ** 31 - 1; // 2147483647
+//   reversed = parseInt(reversed)
+//   if (reversed > 0x7FFFFFFF){
+//       return 0
+//   }
+//   else if (reversed < INT_MIN || reversed > INT_MAX) {
+//       return 0;
+//   }
+
+//   return reversed
+// };
 
 
+// Given an integer x, return true if x is a palindrome, and false otherwise.
+// const reverseInteger= function(num) {
+//   let string = num.toString();  // Convert number to string
+//   let reversed = '';            // Initialize reversed as an empty string
+//   for (let i = 0; i < string.length; i++) {
+//       reversed = string[i] + reversed;  // Concatenate the current character at the beginning of 'reversed'
+//   }
+
+//   reversed = parseInt(reversed)
+//   return reversed
+
+// }
+// var isPalindrome = function(x) {
+//    if (reverseInteger(x) === x) {
+//       return true;
+//   } else {
+//       return false;
+//   }
+// };

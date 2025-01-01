@@ -1,0 +1,122 @@
+Java is an object-oriented programming language. The core concept of the object-oriented approach is to break complex problems into smaller objects.
+
+An object is any entity that has a state and behavior. For example, a bicycle is an object. It has
+
+States: idle, first gear, etc
+Behaviors: braking, accelerating, etc.
+Before we learn about objects, let's first know about classes in Java.
+
+Java Class
+A class is a blueprint for the object. Before we create an object, we first need to define the class.
+
+We can think of the class as a sketch (prototype) of a house. It contains all the details about the floors, doors, windows, etc. Based on these descriptions we build the house. House is the object.
+
+Since many houses can be made from the same description, we can create many objects from a class.
+
+
+class Bicylce {
+   void Run(){
+     System.out.println("Working of Braking");
+   }
+}
+class Main{
+    public static void main(String[] args){
+        Bicylce printrun = new Bicylce();
+        printrun.Run();
+    }
+}
+=====================FOR VOID , STRING , INT  AND OTHER METHODS========================
+Yes, in Java, methods with a return type of String, int, or any type other than void must include a return statement that provides a value of the declared return type. If the method does not return a value explicitly, the code will not compile.
+
+Here's an explanation:
+
+Rules for Method Return Types:
+void Methods:
+
+Do not return any value.
+Example:
+java
+Copy code
+public void display() {
+    System.out.println("This method does not return anything.");
+}
+Methods with Return Types (String, int, etc.):
+
+Must include a return statement that returns a value matching the declared type.
+
+Example for String:
+
+java
+Copy code
+public String getMessage() {
+    return "Hello, World!";
+}
+Example for int:
+
+java
+Copy code
+public int addNumbers(int a, int b) {
+    return a + b;
+}
+Example Fix for Your Code:
+Your run method is declared as returning a String. Therefore, it must include a return statement. Here's how it can be fixed:
+
+java
+Copy code
+class Bicycle {
+    public String run() {
+        System.out.println("Working of Braking");
+        return "Run method completed";
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Bicycle printrun = new Bicycle();
+        String result = printrun.run();
+        System.out.println(result);
+    }
+}
+Output:
+mathematica
+Copy code
+Working of Braking
+Run method completed
+If the method does not need to return any value, change the return type to void:
+
+java
+Copy code
+class Bicycle {
+    public void run() {
+        System.out.println("Working of Braking");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Bicycle printrun = new Bicycle();
+        printrun.run();
+    }
+}
+In this case, no return statement is required. The method simply performs its operations.
+class Bicylce {
+    String Run(){
+     System.out.println("Working of Braking");
+     return "hello";
+   }
+}
+class Main{
+    public static void main(String[] args){
+        Bicylce printrun = new Bicylce();
+          String result = printrun.Run();
+        System.out.println(result);
+        printrun.Run();
+    }
+}
+==========================ACCES MODIFIERS===================================
+
+
+
+
+
+
