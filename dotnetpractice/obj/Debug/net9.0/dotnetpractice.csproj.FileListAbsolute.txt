@@ -1,0 +1,15 @@
+D:\githubfolder\gitpractice\dotnetpractice\bin\Debug\net9.0\dotnetpractice.exe
+D:\githubfolder\gitpractice\dotnetpractice\bin\Debug\net9.0\dotnetpractice.deps.json
+D:\githubfolder\gitpractice\dotnetpractice\bin\Debug\net9.0\dotnetpractice.runtimeconfig.json
+D:\githubfolder\gitpractice\dotnetpractice\bin\Debug\net9.0\dotnetpractice.dll
+D:\githubfolder\gitpractice\dotnetpractice\bin\Debug\net9.0\dotnetpractice.pdb
+D:\githubfolder\gitpractice\dotnetpractice\obj\Debug\net9.0\dotnetpractice.GeneratedMSBuildEditorConfig.editorconfig
+D:\githubfolder\gitpractice\dotnetpractice\obj\Debug\net9.0\dotnetpractice.AssemblyInfoInputs.cache
+D:\githubfolder\gitpractice\dotnetpractice\obj\Debug\net9.0\dotnetpractice.AssemblyInfo.cs
+D:\githubfolder\gitpractice\dotnetpractice\obj\Debug\net9.0\dotnetpractice.csproj.CoreCompileInputs.cache
+D:\githubfolder\gitpractice\dotnetpractice\obj\Debug\net9.0\dotnetpractice.sourcelink.json
+D:\githubfolder\gitpractice\dotnetpractice\obj\Debug\net9.0\dotnetpractice.dll
+D:\githubfolder\gitpractice\dotnetpractice\obj\Debug\net9.0\refint\dotnetpractice.dll
+D:\githubfolder\gitpractice\dotnetpractice\obj\Debug\net9.0\dotnetpractice.pdb
+D:\githubfolder\gitpractice\dotnetpractice\obj\Debug\net9.0\dotnetpractice.genruntimeconfig.cache
+D:\githubfolder\gitpractice\dotnetpractice\obj\Debug\net9.0\ref\dotnetpractice.dll
