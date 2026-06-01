@@ -1,4 +1,7 @@
 
+
+
+
 // The main differences between above examples is:
 // filter() returns an array containing the element that satisfies the condition, but find() returns the element itself that satisfies the condition.
 // In filter(), whole array is iterated despite the fact that the element being searched for is present at the beginning. But in find(), as soon as the element that satisfies the condition is found, it gets returned
@@ -139,5 +142,16 @@ const products = [
   const electronicsAverage = productsFilterElectronics.map((e)=>e.price)
   const averageElectronics = electronicsAverage.reduce((a,c)=>a+c)/electronicsAverage.length
   console.log('productsFilterElectronics',productsFilterElectronics,'productsFilterClothes',productsFilterClothes,'electronicsAverage',electronicsAverage,'averageElectronics',averageElectronics)
-
-
+// prime numbers
+// for (let i=2;i<25;i++){
+//     let isprime =true
+//     for (let j=2;j<i;j++){
+//         if (i%j == 0){
+//             isprime= false
+//             break
+//         }
+//     }
+//   if (isprime){
+//       console.log(i)
+//   }
+// }
